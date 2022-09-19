@@ -1,6 +1,8 @@
 import React from "react";
 function Post(props){
   const [salvo,setSalvo] = React.useState("bookmark-outline");
+  const [curtido,setCurtido] = React.useState("heart-outline");
+  const [classe,setClasse] = React.useState("preto");
 
   function salvarPost(){
     if(salvo==="bookmark-outline"){
@@ -8,6 +10,16 @@ function Post(props){
     }
     else{
       setSalvo("bookmark-outline");
+    }
+  }
+  function curtirPost(){
+    if(curtido==="heart-outline"){
+      setCurtido("heart");
+      setClasse("vermelho");
+    }
+    else{
+      setCurtido("heart-outline");
+      setClasse("preto");
     }
   }
 
@@ -24,13 +36,13 @@ function Post(props){
   </div>
 
   <div class="conteudo">
-    <img src={props.conteudo} />
+    <img onClick={curtirPost} src={props.conteudo} />
   </div>
 
   <div class="fundo">
     <div class="acoes">
       <div>
-        <ion-icon name="heart-outline"></ion-icon>
+        <ion-icon onClick={curtirPost} name={curtido} class= {classe}></ion-icon>
         <ion-icon name="chatbubble-outline"></ion-icon>
         <ion-icon name="paper-plane-outline"></ion-icon>
       </div>
