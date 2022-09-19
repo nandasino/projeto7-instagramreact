@@ -19,7 +19,9 @@ export default function Stories(){
     {imagem:"assets/img/9gag.svg",usuario:"9gag"},
     {imagem:"assets/img/9gag.svg",usuario:"9gag"},
     {imagem:"assets/img/9gag.svg",usuario:"9gag"},
-    {imagem:"assets/img/9gag.svg",usuario:"9gag"},       
+    {imagem:"assets/img/9gag.svg",usuario:"9gag"},
+    {imagem:"assets/img/9gag.svg",usuario:"9gag"},
+    {imagem:"assets/img/9gag.svg",usuario:"9gag"},          
   ];
 
 return(
