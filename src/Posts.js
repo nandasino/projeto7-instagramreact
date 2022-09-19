@@ -36,7 +36,7 @@ function Post(props){
   </div>
 </div>
   );
-}
+};
 
 export default function Posts(){
 
@@ -49,4 +49,4 @@ export default function Posts(){
         {lista.map((p)=><Post imagem ={p.imagem} usuario={p.usuario} conteudo= {p.conteudo} curtida={p.curtida} texto={p.texto} quantidade={p.quantidade}/>)}
         </div>
     );
-}
+};
