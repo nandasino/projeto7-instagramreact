@@ -69,7 +69,7 @@ export default function Posts(){
 
   const lista =[
     {imagem:"assets/img/meowed.svg",usuario:"meowed",conteudo:"assets/img/gato-telefone.svg",curtida:"assets/img/respondeai.svg", texto:"respondeai",quantidade:101523},
-    {imagem:"assets/img/meowed.svg",usuario:"meowed",conteudo:"assets/img/gato-telefone.svg",curtida:"assets/img/respondeai.svg", texto:"respondeai",quantidade:102}
+    {imagem:"assets/img/barked.svg",usuario:"barked",conteudo:"assets/img/dog.svg",curtida:"assets/img/adorable_animals.svg", texto:"adorable_animals",quantidade:99159}
   ];
     return(
         <div class="posts">
